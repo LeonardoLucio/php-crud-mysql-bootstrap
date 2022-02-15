@@ -62,7 +62,7 @@
           <td>$data_nascimento</td>
           <td>
           <a href='cadastro_edit.php?id=$cod_pessoa' class='btn btn-primary'>Editar</a>
-          <a href='#' class='btn btn-danger'>Excluir</a>
+          <a href='cadastro_delete.php?id=$cod_pessoa' class='btn btn-danger'>Excluir</a>
           </td>
           </tr>
       ";

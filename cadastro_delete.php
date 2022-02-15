@@ -22,30 +22,30 @@ $linha = mysqli_fetch_assoc($dados);
 <div class="container">
             <div class="row">
                 <div class="col">
-    <form action="edit_script.php" method="POST">
+    <form action="delete_script.php" method="POST">
       
     <div class="mb-3">
     <label for="nome" class="form-label">Nome</label>
-    <input type="text" class="form-control"  placeholder="Digite aqui..." name="nome" value="<?php echo $linha['nome'];?>" required>
+    <input type="text" class="form-control"  placeholder="Digite aqui..." name="nome" value="<?php echo $linha['nome'];?>" >
     </div>
     <div class="mb-3">
     <label for="endereco" class="form-label">Endereco</label>
-    <input type="text" class="form-control"  placeholder="Digite aqui..." name="endereco" value="<?php echo $linha['endereco'];?>" required>
+    <input type="text" class="form-control"  placeholder="Digite aqui..." name="endereco" value="<?php echo $linha['endereco'];?>" >
     </div>
     <div class="mb-3">
     <label for="telefone" class="form-label">Telefone</label>
-    <input type="text" class="form-control"  placeholder="Digite aqui..." name="telefone" value="<?php echo $linha['telefone'];?>" required>
+    <input type="text" class="form-control"  placeholder="Digite aqui..." name="telefone" value="<?php echo $linha['telefone'];?>" >
     </div>
     <div class="mb-3">
     <label for="email" class="form-label">Email</label>
-    <input type="text" class="form-control"  placeholder="Digite aqui..." name="email" value="<?php echo $linha['email'];?>" required>
+    <input type="text" class="form-control"  placeholder="Digite aqui..." name="email" value="<?php echo $linha['email'];?>" >
     </div>
     <div class="mb-3">
     <label for="data" class="form-label">Data de Nascimento</label>
-    <input type="date" class="form-control"  placeholder="Digite aqui..." name="data_nascimento" value="<?php echo $linha['data_nascimento'];?>" required>
+    <input type="date" class="form-control"  placeholder="Digite aqui..." name="data_nascimento" value="<?php echo $linha['data_nascimento'];?>" >
     </div>
     <div class="col-12">
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <button type="submit" class="btn btn-danger">Excluir</button>
     <input type="hidden" name="id" value="<?php echo $linha['cod_pessoa'];?>">
   </div>
     </form>
